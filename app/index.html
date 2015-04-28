@@ -8,19 +8,23 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <meta charset="UTF-8">
     <title>AdminLTE 2 | Dashboard</title>
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
-    <!-- Bootstrap 3.3.2 -->
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/dc.js/dc.css" />
+    <link rel="stylesheet" href="bower_components/admin-lte/dist/css/AdminLTE.css" />
+    <link rel="stylesheet" href="bower_components/admin-lte/dist/css/skins/skin-blue.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+    
     <!-- Font Awesome Icons -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
     <!-- Ionicons -->
     <link href="http://code.ionicframework.com/ionicons/2.0.0/css/ionicons.min.css" rel="stylesheet" type="text/css" />
-    <!-- Theme style -->
-    <link href="dist/css/AdminLTE.min.css" rel="stylesheet" type="text/css" />
-    <!-- AdminLTE Skins. We have chosen the skin-blue for this starter
-          page. However, you can choose any other skin. Make sure you
-          apply the skin class to the body tag so the changes take effect.
-    -->
-    <link href="dist/css/skins/skin-blue.min.css" rel="stylesheet" type="text/css" />
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -34,19 +38,19 @@ scratch. This page gets rid of all links and provides the needed markup only.
   =================
   Apply one or more of the following classes to get the 
   desired effect
-  |---------------------------------------------------------|
+  |=========================================================|
   | SKINS         | skin-blue                               |
   |               | skin-black                              |
   |               | skin-purple                             |
   |               | skin-yellow                             |
   |               | skin-red                                |
   |               | skin-green                              |
-  |---------------------------------------------------------|
+  |=========================================================|
   |LAYOUT OPTIONS | fixed                                   |
   |               | layout-boxed                            |
   |               | layout-top-nav                          |
   |               | sidebar-collapse                        |  
-  |---------------------------------------------------------|
+  |=========================================================|
   
   -->
   <body class="skin-blue">
@@ -235,7 +239,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <ul class="sidebar-menu">
             <li class="header">HEADER</li>
             <!-- Optionally, you can add icons to the links -->
-            <li class="active"><a href="#"><span>Link</span></a><</li>
+            <li class="active"><a href="#"><span>Link</span></a></li>
             <li><a href="#"><span>Another Link</span></a></li>
             <li class="treeview">
               <a href="#"><span>Multilevel</span> <i class="fa fa-angle-left pull-right"></i></a>
@@ -282,15 +286,20 @@ scratch. This page gets rid of all links and provides the needed markup only.
       </footer>
 
     </div><!-- ./wrapper -->
-
-    <!-- REQUIRED JS SCRIPTS -->
     
-    <!-- jQuery 2.1.3 -->
-    <script src="plugins/jQuery/jQuery-2.1.3.min.js"></script>
-    <!-- Bootstrap 3.3.2 JS -->
-    <script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
-    <!-- AdminLTE App -->
-    <script src="dist/js/app.min.js" type="text/javascript"></script>
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/d3/d3.js"></script>
+    <script src="bower_components/crossfilter/crossfilter.js"></script>
+    <script src="bower_components/dc.js/dc.js"></script>
+    <script src="bower_components/admin-lte/dist/js/app.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+    
+    <!-- build:js({app,.tmp}) scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
     
     <!-- Optionally, you can add Slimscroll and FastClick plugins. 
           Both of these plugins are recommended to enhance the 
