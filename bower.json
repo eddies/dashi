@@ -1,6 +1,17 @@
 {
   "name": "dashi",
+  "version": "0.1.0",
+  "description": "A dashboard for data visualization",
+  "license": "Apache",
   "private": true,
+  "keywords": [
+    "visualization",
+    "dashboard",
+    "data",
+    "dc",
+    "crossfilter",
+    "d3"
+  ],
   "dependencies": {
     "bootstrap": "~3.2.0",
     "dc.js": "~1.7.3",
