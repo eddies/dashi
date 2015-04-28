@@ -16,5 +16,16 @@
     "bootstrap": "~3.2.0",
     "dc.js": "~1.7.3",
     "admin-lte": "~2.0.5"
+  },
+  "overrides": {
+    "admin-lte": {
+      "main": [
+        "index2.html",
+        "dist/css/AdminLTE.css",
+        "dist/js/app.js",
+        "build/less/AdminLTE.less",
+        "dist/css/skins/skin-blue.css"
+      ]
+    }
   }
 }
