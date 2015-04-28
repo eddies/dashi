@@ -2,6 +2,8 @@
   "name": "dashi",
   "private": true,
   "dependencies": {
-    "bootstrap": "~3.2.0"
+    "bootstrap": "~3.2.0",
+    "dc.js": "~1.7.3",
+    "admin-lte": "~2.0.5"
   }
 }
