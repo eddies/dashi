@@ -12,10 +12,24 @@
     "crossfilter",
     "d3"
   ],
+  "main": [
+    "app/index.html",
+    "app/scripts/dashi.js",
+    "app/styles/dashi.css",
+    "app/data/demo.csv"
+  ],
+  "ignore": [
+    ".bowerrc",
+    ".gitignore",
+    ".jshintignore",
+    ".jshintrc"
+  ],
   "dependencies": {
     "bootstrap": "~3.2.0",
-    "dc.js": "~1.7.3",
-    "admin-lte": "~2.0.5"
+    "dc.js": "2.0.0-beta.8",
+    "admin-lte": "~2.0.5",
+    "colorbrewer": "~1.0.0",
+    "jquery-ui": "~1.11.4"
   },
   "overrides": {
     "admin-lte": {
