@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "description": "A dashboard for data visualization",
   "license": "Apache",
-  "private": true,
   "keywords": [
     "visualization",
     "dashboard",
