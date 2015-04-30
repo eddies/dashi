@@ -363,6 +363,14 @@ module.exports = function (grunt) {
         'imagemin',
         'svgmin'
       ]
+    },
+    
+    // Support for grunt-gh-pages
+    'gh-pages': {
+      options: {
+        base: 'dist'
+      },
+      src: ['**']
     }
   });
 
@@ -425,4 +433,7 @@ module.exports = function (grunt) {
     'test',
     'build'
   ]);
+  
+  // grunt-gh-pages (https://github.com/tschaub/grunt-gh-pages)
+  grunt.loadNpmTasks('grunt-gh-pages');
 };
