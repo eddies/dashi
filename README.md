@@ -21,6 +21,9 @@ grunt gh-pages
 
 Enjoy!
 
+## Demo
+[https://eddies.github.io/dashi/](https://eddies.github.io/dashi/)
+
 ## What's underneath the hood?
 The dashboard template comes courtesy of [AdminLTE](https://almsaeedstudio.com/themes/AdminLTE/documentation/index.html). AdminLTE is a MIT-licensed, responsive HTML template, which is itself based on the [Bootstrap 3](http://getbootstrap.com/) framework.
 
