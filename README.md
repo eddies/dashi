@@ -1,4 +1,4 @@
-# dashi: data made delicious
+# dashi: data made delicious [![Build Status](https://travis-ci.org/eddies/dashi.svg?branch=master)](https://travis-ci.org/eddies/dashi)
 Dashi is dashboard for data visualizations.
 
 ## Getting Started
