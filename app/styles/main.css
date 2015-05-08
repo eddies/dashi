@@ -1,1 +1,4 @@
 /* Your css goes here */
+.dc-chart g.row text {
+  fill: black;
+}
