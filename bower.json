@@ -6,9 +6,8 @@
   "dependencies": {
     "bootstrap": "~3.3.2",
     "dc.js": "2.0.0-beta.9",
-    "admin-lte": "~2.0.5",
-    "colorbrewer": "~1.0.0",
-    "jquery-ui": "~1.11.4"
+    "admin-lte": "~2.1.1",
+    "colorbrewer": "~1.0.0"
   },
   "devDependencies": {
     "chai": "~2.3.0",
