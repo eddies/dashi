@@ -17,11 +17,12 @@
 <div class="row">
   <section class="col-lg-12 col-xs-12 connectedSortable">
     <div class="box box-success">
-      <div class="box-body">
-        <div id="industry-chart" class="dc-chart">
-          <i class="fa fa-inbox"></i> <strong>By Industries</strong> (y: number of deals, x: total amount raised in millions, radius: amount raised)
+      <div class="box-header">
+        <i class="fa fa-inbox"></i><h3 class="box-title">By Industries</h3> (y: number of deals, x: total amount raised in millions, radius: amount raised)
         <a class="reset" href="javascript:industryChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
-        </div>
+      </div>
+      <div class="box-body">
+        <div id="industry-chart" class="dc-chart"></div>
       </div>
       <div class="box-footer clearfix no-border"></div>
     </div>
@@ -31,11 +32,12 @@
 <div class="row">
   <section class="col-lg-12 col-xs-12 connectedSortable">
     <div class="box box-success">
-      <div class="box-body">
-        <div id="round-chart" class="dc-chart">
-          <i class="fa fa-inbox"></i> <strong>By Rounds</strong> (y: number of deals, x: total amount raised in millions, radius: amount raised)
+      <div class="box-header">
+        <i class="fa fa-inbox"></i><h3 class="box-title">By Rounds</h3> (y: number of deals, x: total amount raised in millions, radius: amount raised)
         <a class="reset" href="javascript:roundChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
-        </div>
+      </div>
+      <div class="box-body">
+        <div id="round-chart" class="dc-chart"></div>
       </div>
       <div class="box-footer clearfix no-border"></div>
     </div>
