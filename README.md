@@ -1,6 +1,8 @@
 # dashi: data made delicious [![Build Status](https://travis-ci.org/eddies/dashi.svg?branch=master)](https://travis-ci.org/eddies/dashi)
 Dashi is dashboard for data visualizations.
 
+![dashi](https://cloud.githubusercontent.com/assets/149985/7785904/b7e3c75a-01dc-11e5-90a4-fa6dc784e7e8.gif)
+
 ## Getting Started
 Presumably you've arrived at this point after having run the [Dashi generator](https://github.com/eddies/generator-dashi) (`yo dashi`).
 
