@@ -2,8 +2,8 @@
 
 /* global dc, d3, crossfilter */
 
-var leafletMarker = dc.leafletMarkerChart('#demo1-map');
-var leafletPie = dc.pieChart('#demo1-pie');
+var leafletMarker = dc.leafletMarkerChart('#demo1-map', 'demo-leaflet');
+var leafletPie = dc.pieChart('#demo1-pie', 'demo-leaflet');
 
 function drawMarkerSelect(data) {
   var xf = crossfilter(data);
@@ -37,7 +37,7 @@ function drawMarkerSelect(data) {
       return -p.value;
     });
 
-	dc.renderAll();
+	dc.renderAll('demo-leaflet');
 }
 
 d3.tsv('data/demo-leaflet.tsv', function(data) {

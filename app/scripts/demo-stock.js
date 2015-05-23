@@ -9,13 +9,13 @@
 // css selector.
 // Note: It is often a good idea to have these objects accessible at the global 
 // scope so that they can be modified or filtered by other page controls.
-var gainOrLossChart = dc.pieChart('#gain-loss-chart');
-var fluctuationChart = dc.barChart('#fluctuation-chart');
-var quarterChart = dc.pieChart('#quarter-chart');
-var dayOfWeekChart = dc.rowChart('#day-of-week-chart');
-var moveChart = dc.lineChart('#monthly-move-chart');
-var volumeChart = dc.barChart('#monthly-volume-chart');
-var yearlyBubbleChart = dc.bubbleChart('#yearly-bubble-chart');
+var gainOrLossChart = dc.pieChart('#gain-loss-chart', 'demo-stock');
+var fluctuationChart = dc.barChart('#fluctuation-chart', 'demo-stock');
+var quarterChart = dc.pieChart('#quarter-chart', 'demo-stock');
+var dayOfWeekChart = dc.rowChart('#day-of-week-chart', 'demo-stock');
+var moveChart = dc.lineChart('#monthly-move-chart', 'demo-stock');
+var volumeChart = dc.barChart('#monthly-volume-chart', 'demo-stock');
+var yearlyBubbleChart = dc.bubbleChart('#yearly-bubble-chart', 'demo-stock');
 
 // ### Anchor Div for Charts
 /*
@@ -569,7 +569,7 @@ d3.csv('data/demo-stock.csv', function (rows) {
 
     //#### Rendering
     //simply call renderAll() to render all charts on the page
-    dc.renderAll();
+    dc.renderAll('demo-stock');
     /*
     // or you can render charts belong to a specific chart group
     dc.renderAll('group');

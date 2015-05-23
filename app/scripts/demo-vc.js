@@ -4,9 +4,9 @@
 /* global dc,d3,crossfilter */
 
 var numberFormat = d3.format('.2f');
-var usChart = dc.geoChoroplethChart('#us-chart');
-var industryChart = dc.bubbleChart('#industry-chart');
-var roundChart = dc.bubbleChart('#round-chart');
+var usChart = dc.geoChoroplethChart('#us-chart', 'demo-vc');
+var industryChart = dc.bubbleChart('#industry-chart', 'demo-vc');
+var roundChart = dc.bubbleChart('#round-chart', 'demo-vc');
 d3.csv('data/demo-vc.csv', function (csv) {
   var data = crossfilter(csv);
   var states = data.dimension(function (d) {
@@ -96,9 +96,9 @@ d3.csv('data/demo-vc.csv', function (csv) {
                  .renderLabel(true)
                  .renderTitle(true)
                  .title(function (p) {
-                   return p.key + 
-                     '\n' + 
-                     'Amount Raised: ' + numberFormat(p.value.amountRaised) + 'M\n' + 
+                   return p.key +
+                     '\n' +
+                     'Amount Raised: ' + numberFormat(p.value.amountRaised) + 'M\n' +
                      'Number of Deals: ' + numberFormat(p.value.deals);
                  });
     industryChart.yAxis().tickFormat(function (s) {
@@ -135,8 +135,8 @@ d3.csv('data/demo-vc.csv', function (csv) {
               .renderLabel(true)
               .renderTitle(true)
               .title(function (p) {
-                return p.key + 
-                  '\n' + 
+                return p.key +
+                  '\n' +
                   'Amount Raised: ' + numberFormat(p.value.amountRaised) + 'M\n' +
                   'Number of Deals: ' + numberFormat(p.value.deals);
               });
@@ -146,6 +146,6 @@ d3.csv('data/demo-vc.csv', function (csv) {
     roundChart.xAxis().tickFormat(function (s) {
       return s + 'M';
     });
-    dc.renderAll();
+    dc.renderAll('demo-vc');
   });
 });
