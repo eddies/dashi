@@ -1,6 +1,6 @@
 'use strict';
 
-/* global dc, d3, crossfilter */
+/* global dc, d3, crossfilter, L */
 
 var leafletMarker = dc.leafletMarkerChart('#demo1-map', 'demo-leaflet');
 var leafletPie = dc.pieChart('#demo1-pie', 'demo-leaflet');
@@ -10,8 +10,14 @@ function drawMarkerSelect(data) {
   
 	var facilities = xf.dimension(function(d) { return d.geo; });
 	var facilitiesGroup = facilities.group().reduceCount();
-
+  var tiles = function (map) {
+    L.tileLayer('//{s}.tile.osm.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+  };
+  
   leafletMarker
+    .tiles(tiles)
     .dimension(facilities)
     .group(facilitiesGroup)
     //.width(600)
