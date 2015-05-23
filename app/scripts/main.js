@@ -2,11 +2,7 @@
 
 /* global dc, d3 */
 
-/*jshint unused:false*/
 /*jshint browser: true */
-
-
-
 
 /**
  * Dynamically load content into Bootstrap tabs
@@ -14,6 +10,7 @@
 $(function() {
 
   // see: https://stackoverflow.com/questions/28322636/synchronous-xmlhttprequest-warning-and-script
+  /*jshint unused:false*/
   $.ajaxPrefilter(function( options, originalOptions, jqXHR ) {
       options.async = true;
   });

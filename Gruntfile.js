@@ -1,6 +1,6 @@
 /*jshint node:true*/
 
-// Generated on 2015-05-09 using generator-dashi 0.1.5
+// Generated on 2015-05-23 using generator-dashi 0.1.6
 'use strict';
 
 // # Globbing

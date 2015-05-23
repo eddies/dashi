@@ -1,8 +1,9 @@
 {
   "name": "dashi",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "A dashboard for data visualizations",
   "license:": "Apache-2.0",
+  "repository": "eddies/dashi",
   "dependencies": {
     "bootstrap": "~3.3.2",
     "dc.js": "2.0.0-beta.9",
