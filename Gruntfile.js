@@ -85,7 +85,8 @@ module.exports = function (grunt) {
             return [
               connect.static('.tmp'),
               connect().use('/bower_components', connect.static('./bower_components')),
-              connect().use('/fonts', connect.static('<%= config.app %>/bower_components/bootstrap/dist/fonts')),
+              connect().use('/fonts', connect.static('./bower_components/bootstrap/dist/fonts')),
+              connect().use('/images/leaflet', connect.static('./bower_components/leaflet/dist/images')),
               connect.static(config.app)
             ];
           }
@@ -101,6 +102,7 @@ module.exports = function (grunt) {
               connect.static(config.test),
               connect().use('/bower_components', connect.static('./bower_components')),
               connect().use('/fonts', connect.static('./bower_components/bootstrap/dist/fonts')),
+              connect().use('/images/leaflet', connect.static('./bower_components/leaflet/dist/images')),
               connect.static(config.app),
               // Supports using /app/scripts/main.js from test/index.html
               connect().use('/app', connect.static(config.app))
@@ -231,7 +233,9 @@ module.exports = function (grunt) {
         src: [
           '<%= config.dist %>/scripts/{,*/}*.js',
           '<%= config.dist %>/styles/{,*/}*.css',
-          '<%= config.dist %>/images/{,*/}*.*',
+          //'<%= config.dist %>/images/{,*}*.*',
+          // all images except those in images/leaflet
+          '<%= config.dist %>/images/{,*,!leaflet}*.*',
           '<%= config.dist %>/styles/fonts/{,*/}*.*',
           '<%= config.dist %>/*.{ico,png}'
         ]
@@ -354,6 +358,11 @@ module.exports = function (grunt) {
           cwd: 'bower_components/bootstrap/dist',
           src: 'fonts/*',
           dest: '<%= config.dist %>'
+        }, { // copy leaflet images to a location specified by L.Icon.Default.imagePath
+          expand: true,
+          cwd: 'bower_components/leaflet/dist/images',
+          src: '**/*.{png,jpg,jpeg,gif}',
+          dest: '<%= config.dist %>/images/leaflet'
         }]
       }
     },

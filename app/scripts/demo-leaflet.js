@@ -5,6 +5,9 @@
 var leafletMarker = dc.leafletMarkerChart('#demo1-map', 'demo-leaflet');
 var leafletPie = dc.pieChart('#demo1-pie', 'demo-leaflet');
 
+// set imagePath manually to the location Grunt will 
+L.Icon.Default.imagePath = '/images/leaflet';
+
 function drawMarkerSelect(data) {
   var xf = crossfilter(data);
   
