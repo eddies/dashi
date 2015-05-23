@@ -1,1 +1,0 @@
-"use strict";$(function(){$.ajaxPrefilter(function(a,b,c){a.async=!0}),$('a[data-toggle="tab"]').on("shown.bs.tab",function(a){var b=$(a.target).attr("href"),c=$(a.target).attr("data-url");$(b).is(":empty")&&$(b).load(c)})});
