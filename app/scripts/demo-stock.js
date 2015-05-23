@@ -416,7 +416,7 @@ d3.csv('data/demo-stock.csv', function (rows) {
         <span class='filter-count'></span> selected out of <span class='total-count'></span> records
     </div>
     */
-    dc.dataCount('.dc-data-count')
+    dc.dataCount('.dc-data-count', 'demo-stock')
         .dimension(cf)
         .group(all)
         // (optional) html, for setting different html for some records and all records.
@@ -448,7 +448,7 @@ d3.csv('data/demo-stock.csv', function (rows) {
         <!-- data rows will filled in here -->
     </div>
     */
-    dc.dataTable('.dc-data-table')
+    dc.dataTable('.dc-data-table', 'demo-stock')
         .dimension(dateDimension)
         // data table does not use crossfilter group but rather a closure
         // as a grouping function
