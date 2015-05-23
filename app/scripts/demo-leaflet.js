@@ -6,7 +6,7 @@ var leafletMarker = dc.leafletMarkerChart('#demo1-map', 'demo-leaflet');
 var leafletPie = dc.pieChart('#demo1-pie', 'demo-leaflet');
 
 // set imagePath manually to the location Grunt will 
-L.Icon.Default.imagePath = '/images/leaflet';
+L.Icon.Default.imagePath = './images/leaflet';
 
 function drawMarkerSelect(data) {
   var xf = crossfilter(data);
@@ -14,7 +14,7 @@ function drawMarkerSelect(data) {
 	var facilities = xf.dimension(function(d) { return d.geo; });
 	var facilitiesGroup = facilities.group().reduceCount();
   var tiles = function (map) {
-    L.tileLayer('//{s}.tile.osm.org/{z}/{x}/{y}.png', {
+    L.tileLayer('//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
   };
