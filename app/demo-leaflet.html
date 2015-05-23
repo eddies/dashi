@@ -1,0 +1,33 @@
+<!-- demo-leaflet.html -->
+<div class="row">
+  <section class="col-lg-9 col-xs-9 connectedSortable">
+    <div class="box box-success">
+      <div class="box-header">
+        <i class="fa fa-inbox"></i><h3 class="box-title">Markers with no clustering and selection by area</h3>
+        <a class="reset" href="javascript:leafletMarker.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+      </div>
+      <div class="box-body">
+        <div id="demo1-map" class="dc-chart"></div>
+      </div>
+      <div class="box-footer clearfix no-border"></div>
+    </div>
+  </section>
+  
+  <section class="col-lg-3 col-xs-3 connectedSortable">
+    <div class="box box-success">
+      <div class="box-header">
+        <i class="fa fa-inbox"></i><h3 class="box-title">By Type</h3>
+        <a class="reset" href="javascript:leafletPie.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+      </div>
+      <div class="box-body">
+        <div id="demo1-pie" class="dc-chart"></div>
+      </div>
+      <div class="box-footer clearfix no-border"></div>
+    </div>
+  </section>
+  
+</div>
+<!-- build:js({app,.tmp}) scripts/demo-leaflet.js -->
+<script src="scripts/demo-leaflet.js"></script>
+<!-- endbuild -->
+<!-- /demo-leaflet.html -->

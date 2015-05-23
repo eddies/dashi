@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="bower_components/dc.js/dc.css" />
     <link rel="stylesheet" href="bower_components/admin-lte/dist/css/AdminLTE.css" />
     <link rel="stylesheet" href="bower_components/admin-lte/dist/css/skins/skin-blue.css" />
+    <link rel="stylesheet" href="bower_components/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="bower_components/leaflet.markercluster/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="bower_components/leaflet.markercluster/dist/MarkerCluster.Default.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
@@ -95,6 +98,7 @@
             <li><a href="#about" data-url="about.html" data-toggle="tab"><span>About</span></a></li>
             <li class="active"><a href="#demo-stock" data-toggle="tab"><span>NASDAQ 100 Index</span></a></li>
             <li><a href="#demo-vc" data-url="demo-vc.html" data-toggle="tab"><span>US VC Landscape</span></a></li>
+            <li><a href="#demo-leaflet" data-url="demo-leaflet.html" data-toggle="tab"><span>Leaflet</span></a></li>
             <!--
             <li class="treeview">
               <a href="#"><span>Multilevel</span> <i class="fa fa-angle-left pull-right"></i></a>
@@ -231,7 +235,10 @@
             </div> <!-- /row 5 -->
             
           </div><!-- /demo-stock -->
+          
           <div class="tab-pane" id="demo-vc"></div>
+          
+          <div class="tab-pane" id="demo-leaflet"></div>
 
         </section><!-- /.content -->
       </div><!-- /.content-wrapper -->
@@ -257,6 +264,11 @@
     <script src="bower_components/dc.js/dc.js"></script>
     <script src="bower_components/admin-lte/dist/js/app.js"></script>
     <script src="bower_components/colorbrewer/colorbrewer.js"></script>
+    <script src="bower_components/leaflet/dist/leaflet.js"></script>
+    <script src="bower_components/leaflet/dist/leaflet-src.js"></script>
+    <script src="bower_components/leaflet.markercluster/dist/leaflet.markercluster-src.js"></script>
+    <script src="bower_components/d3-tip/index.js"></script>
+    <script src="bower_components/dc-addons/dist/dc-addons.min.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
     
