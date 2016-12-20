@@ -31,4 +31,5 @@ The dashboard template comes courtesy of [AdminLTE](https://almsaeedstudio.com/t
 
 The multidimensional charting comes courtesy of [dc.js](https://dc-js.github.io/dc.js/), an Apache 2.0 licensed JavaScript charting library built on [Crossfilter](https://square.github.io/crossfilter/) and [D3](http://d3js.org/).
 
+foo
  
